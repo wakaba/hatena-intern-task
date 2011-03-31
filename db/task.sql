@@ -1,0 +1,37 @@
+-- CREATE DATABASE task;
+-- USE task;
+
+CREATE TABLE user (
+  id INT UNSIGNED AUTO_INCREMENT,
+  name VARCHAR(32) NOT NULL,
+  session_key VARCHAR(40),
+  created_on TIMESTAMP DEFAULT 0,
+  updated_on TIMESTAMP DEFAULT 0,
+  PRIMARY KEY (id)
+) DEFAULT CHARSET=BINARY;
+
+CREATE TABLE task (
+  id INT UNSIGNED AUTO_INCREMENT,
+  name TEXT,
+  user_id INT UNSIGNED NOT NULL,
+  status BOOL,
+  due DATE,
+  created_on TIMESTAMP DEFAULT 0,
+  updated_on TIMESTAMP DEFAULT 0,
+  PRIMARY KEY (id),
+  KEY (user_id)
+) DEFAULT CHARSET=BINARY;
+
+CREATE TABLE tag (
+  id INT UNSIGNED AUTO_INCREMENT,
+  name TINYTEXT,
+  user_id INT UNSIGNED NOT NULL,
+  task_id INT UNSIGNED NOT NULL,
+  created_on TIMESTAMP DEFAULT 0,
+  updated_on TIMESTAMP DEFAULT 0,
+  PRIMARY KEY (id),
+  KEY (user_id),
+  KEY (task_id)
+) DEFAULT CHARSET=BINARY;
+
+INSERT INTO user (name) VALUES ('onishi');
