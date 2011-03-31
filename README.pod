@@ -12,6 +12,15 @@ lib/ - Perl modules used by task.pl.
 
 t/ - Test scripts for Perl modules.
 
+=head1 SEE ALSO
+
+Hatena Summer Internship 2010
+<http://www.hatena.ne.jp/company/intern2010/>.
+
+Hatena::Engineering <http://d.hatena.ne.jp/hatenatech/>.
+
+DBIx::MoCo <https://github.com/hatena/DBIx-MoCo>.
+
 =head1 AUTHOR
 
 Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
