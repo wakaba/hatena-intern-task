@@ -1,0 +1,30 @@
+=head1 NAME
+
+hatena-intern-task - Hatena Internship 2010 - Sample program "task.pl"
+
+=head1 FILES
+
+task.pl - Task management program, command-line interface.
+
+db/ - MySQL schema file for the program.
+
+lib/ - Perl modules used by task.pl.
+
+t/ - Test scripts for Perl modules.
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
+
+=head1 ACKNOWLEDGEMENT
+
+id:onishi developed earlier version of this sample program.
+
+=head1 LICENSE
+
+Copyright 2008-2010 Hatena <http://www.hatena.ne.jp/>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
